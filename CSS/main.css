@@ -85,7 +85,7 @@ flex-direction:row-reverse;
     padding-top: 4px;
     opacity: 0.6;
     font-weight:var(--fw-500);
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .price {
@@ -100,7 +100,7 @@ flex-direction:row-reverse;
     font-family: var(--fs-fraunces);
     display: inline-block;
     margin: 0;
-    padding: 8px 0px;
+    padding: 23px 0px;
     color:var(--primary-darkcyan);
 }
 
@@ -111,7 +111,7 @@ flex-direction:row-reverse;
     color: var(--natural-Dark-grayish-blue);
 }
 .add_to_cart{
-    padding-top: 10px;
+    padding-top: 2px;
 }
 .add_to_cart button svg{
    padding: 0 15px;
