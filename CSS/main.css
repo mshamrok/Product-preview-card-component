@@ -56,12 +56,12 @@ flex-direction:row-reverse;
 .right_side .header p {
     width: 100%;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: .7rem;
     font-family:var(--fs-Montserrat);
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-top: 20px;
-    color: var(--primary-darkcyan)
+    color: var(--natural-Dark-grayish-blue);
 }
 .title{
     line-height: 1;
@@ -100,7 +100,7 @@ flex-direction:row-reverse;
     font-family: var(--fs-fraunces);
     display: inline-block;
     margin: 0;
-    padding: 15px 0px;
+    padding: 8px 0px;
     color:var(--primary-darkcyan);
 }
 
@@ -110,9 +110,11 @@ flex-direction:row-reverse;
     font-size: 14px;
     color: var(--natural-Dark-grayish-blue);
 }
-
+.add_to_cart{
+    padding-top: 10px;
+}
 .add_to_cart button svg{
-   padding: 0 10px;
+   padding: 0 15px;
 }
 
 
@@ -125,6 +127,7 @@ flex-direction:row-reverse;
     background-color:var(--primary-darkcyan);
     font-family:var(--fs-Montserrat);
     color: white;
+    font-weight: var(--fw-700);
     border: none;
 }
   
@@ -142,6 +145,7 @@ cursor: pointer;
  border-top-left-radius: 15px;
  border-bottom-left-radius: 15px;
  overflow: hidden;
+ color: hsl(0, 0%, 0%, 0.2);
 
 }
 
