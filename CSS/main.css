@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
---root{
+:root{
   /* Font family */
   --fs-fraunces:'Fraunces', serif;
   --fs-Montserrat:'Montserrat', sans-serif;
@@ -10,17 +10,16 @@
 /* colors */
 
 --primary-darkcyan:hsl(158, 36%, 37%);
---primary-Cream:#f2ebe3;
+--primary-Cream:hsl(32, 37%, 92%);
 --natural-Very-dark-blue:hsl(212, 21%, 14%);
 --natural-Dark-grayish-blue: hsl(228, 12%, 48%);
 --natural-White: hsl(0, 0%, 100%);
-
-  ;
 }
+
 body{
 margin:0;
 box-sizing: border-box;
-font-family:'Montserrat', sans-seri;
+font-family:var(--fs-Montserrat)
 }
 body .p{
 font-size: 14px;
@@ -30,7 +29,7 @@ font-size: 14px;
    position: relative;
     max-width: 1440px;
     height:100vh;
-    background-color:#f2ebe3;
+    background-color:var(--primary-Cream);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +49,7 @@ flex-direction:row-reverse;
     padding-left: 34px;
     width:300px;
     height: 452px;
-    background-color: white;
+    background-color: var(--natural-White);
     border-top-right-radius: 15px;
  border-bottom-right-radius: 15px;
 }
@@ -58,11 +57,11 @@ flex-direction:row-reverse;
     width: 100%;
     font-weight: 500;
     font-size: .9rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family:var(--fs-Montserrat);
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-top: 20px;
-    color:  hsl(228, 12%, 48%,0.8);;
+    color: var(--primary-darkcyan)
 }
 .title{
     line-height: 1;
@@ -73,7 +72,7 @@ flex-direction:row-reverse;
     width: 240px;
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Fraunces', serif;
+    font-family: var(--fs-fraunces);
     display: inline-block;
     margin: 0 auto;
 }
@@ -98,17 +97,18 @@ flex-direction:row-reverse;
     
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Fraunces', serif;
+    font-family: var(--fs-fraunces);
     display: inline-block;
     margin: 0;
     padding: 15px 0px;
-    color:hsl(158, 36%, 37%);
+    color:var(--primary-darkcyan);
 }
 
 .price p:nth-child(2){
     display: flex;
     padding-left: 19px;
     font-size: 14px;
+    color: var(--natural-Dark-grayish-blue);
 }
 
 .add_to_cart button svg{
@@ -122,14 +122,14 @@ flex-direction:row-reverse;
     height: 49px;
     margin-top: 6px;
     border-radius: 9px;
-    background-color:hsl(158, 36%, 37%);
-    font-family: 'Montserrat', sans-serif;
+    background-color:var(--primary-darkcyan);
+    font-family:var(--fs-Montserrat);
     color: white;
     border: none;
 }
   
 .add_to_cart button:hover{
-background-color:hsl(158, 82%, 13%);
+background-color:var(--natural-Very-dark-blue);
 cursor: pointer;
 }
 
