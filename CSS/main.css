@@ -120,6 +120,7 @@ flex-direction:row-reverse;
     position: relative;
     width: 237px;
     height: 49px;
+    margin-top: 6px;
     border-radius: 9px;
     background-color:hsl(158, 36%, 37%);
     font-family: 'Montserrat', sans-serif;
@@ -133,9 +134,7 @@ cursor: pointer;
 }
 
 
-.left_side{
-   
-}
+
 
 .left_side .image_box{
  width:302.5px;
@@ -147,27 +146,82 @@ cursor: pointer;
 }
 
 .left_side .image_box img{
-
+  
    width: 100%;
     object-fit:cover;
 }
-.left_side .image_box img:nth-child(2){
 
-  opacity: 0;
- }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 380px) {
+        .container {
+            min-width: 375px;
+           overflow: hidden;
+           scroll-behavior: unset;
+           height: 100vh;
+        }
     .card{
         display:flex;
         flex-direction:column-reverse;
+        width:344px;
+        height: 640px;
+        margin: auto;
+
         }
 
-        .left_side .image_box img:nth-child(1){
+        .right_side{
+           
+        width:313px;
+        height: 427px;
+        background-color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0;
+        padding-left: 30px;
+        }
+        .right_side .header p {
+            margin-top: 2px;
+           
+        }
+        .right_side .title p {
 
-         opacity: 0;
-          }
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        display: inline-block;
+        margin: 0;
+        display: inline;
+
+        }
+        .description {
+           
+            padding-right: 17px;
+          
+        }
+        .right_side .price{
+            margin-top: -3px;
+
+        }
+
+        .add_to_cart button {
+            width: 285px;
+        }
+        .left_side .image_box{
+            width:344px;
+            height: 241px;
+            border-top-right-radius: 13px;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            overflow: hidden;
+           
+
+           }
+
+           .left_side .image_box img:nth-child(1){
+            display: none;
+           }
           .left_side .image_box img:nth-child(2){
-            height: 50%;
-            opacity: 1;
+           
+           display: block;
           }
 }
