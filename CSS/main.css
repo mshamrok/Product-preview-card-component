@@ -19,7 +19,8 @@
 body{
 margin:0;
 box-sizing: border-box;
-font-family:var(--fs-Montserrat)
+font-family:var(--fs-Montserrat);
+background-color:var(--primary-Cream);
 }
 body .p{
 font-size: 14px;
@@ -29,7 +30,7 @@ font-size: 14px;
    position: relative;
     max-width: 1440px;
     height:100vh;
-    background-color:var(--primary-Cream);
+    
     display:flex;
     align-items: center;
     justify-content: center;
@@ -63,12 +64,12 @@ flex-direction:row-reverse;
     padding-top: 20px;
     color: var(--natural-Dark-grayish-blue);
 }
-.title{
+.perfume_name{
     line-height: 1;
 }
 
 
-.right_side .title p{
+.right_side .perfume_name p{
     width: 240px;
     font-size: 2rem;
     font-weight: 700;
@@ -156,7 +157,7 @@ cursor: pointer;
 }
 
 
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 660px) {
         .container {
             min-width: 375px;
            overflow: hidden;
@@ -186,7 +187,7 @@ cursor: pointer;
             margin-top: 2px;
            
         }
-        .right_side .title p {
+        .right_side .perfume_name p {
 
         font-size: 2rem;
         font-weight: 700;
@@ -221,11 +222,11 @@ cursor: pointer;
 
            }
 
-           .left_side .image_box img:nth-child(1){
+           /* .left_side .image_box img:nth-child(1){
             display: none;
            }
           .left_side .image_box img:nth-child(2){
            
            display: block;
-          }
+          } */
 }
